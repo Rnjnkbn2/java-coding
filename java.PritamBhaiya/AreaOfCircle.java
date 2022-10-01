@@ -1,3 +1,4 @@
+// package java.PritamBhaiya;
 //package Java_PritamBhaiya;
 import java.util.*;
 public class AreaOfCircle {
@@ -7,9 +8,10 @@ public class AreaOfCircle {
       return 0;
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int radius = sc.nextInt();
-        area(radius);
+        try (Scanner sc = new Scanner(System.in)) {
+          int radius = sc.nextInt();
+          area(radius);
+        }
     }
     
 }

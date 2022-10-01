@@ -1,3 +1,4 @@
+// package java.PritamBhaiya;
 //package Java_PritamBhaiya;
 import java.util.*;
 public class AreaOfRect {
@@ -7,10 +8,11 @@ public class AreaOfRect {
         return 0;
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int length = sc.nextInt();
-        int width = sc.nextInt();
-        area(length, width);
+        try (Scanner sc = new Scanner(System.in)) {
+            int length = sc.nextInt();
+            int width = sc.nextInt();
+            area(length, width);
+        }
 
     }
     

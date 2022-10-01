@@ -1,4 +1,4 @@
-// package Java_PritamBhaiya;
+// package java.PritamBhaiya;
 
 import java.util.Scanner;
 
@@ -9,11 +9,12 @@ public class AvgOf_ThreeNo {
         return avg ;
     }
     public static void main(String[] args) {
-        Scanner sc =  new Scanner(System.in);
-        int a = sc.nextInt(); 
-        int b = sc.nextInt();
-        int c = sc.nextInt();
-        avg(a, b, c);
+        try (Scanner sc = new Scanner(System.in)) {
+            int a = sc.nextInt(); 
+            int b = sc.nextInt();
+            int c = sc.nextInt();
+            avg(a, b, c);
+        }
     }
     
 }
